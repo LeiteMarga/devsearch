@@ -208,8 +208,6 @@ def view_email(request, pk):
         email.bool_read = True
         email.save()
 
-    context = {}
-
     context = {'email': email}
     
     return render(request, 'users/message.html', context)
